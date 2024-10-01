@@ -29,7 +29,7 @@ document.getElementById('getWeatherBtn').addEventListener('click', function () {
 
     if (city) {
         // Fetch weather data from your API
-        fetch(`https://localhost:7056/api/weather/${city}`)
+        fetch(`weatherappapi-a9f9c4bxaggfhreh.westus-01.azurewebsites.net/api/weather/${city}`)
             .then(response => response.json())
             .then(data => {
                 // Check if data is valid
