@@ -1,0 +1,110 @@
+﻿body {
+    margin-top: 50px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Input field and button */
+input.form-control, .btn-primary {
+    margin-top: 20px; /* Add some spacing between elements */
+}
+
+/* Container box styling with padding */
+.container {
+    padding: 30px; /* Adds space inside the container */
+    margin-top: 50px; /* Adds space between the container and the top of the page */
+    border-radius: 10px; /* Optional: round the corners of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for a clean look */
+    background-color: #f8f9fa; /* Light background color */
+}
+
+/* Placeholder text in input */
+input::placeholder {
+    opacity: 1; /* Ensure full opacity for better visibility */
+}
+
+/* Default light mode */
+body.bg-light {
+    background-color: #f8f9fa; /* Light background */
+    color: #212529; /* Dark text */
+}
+
+body.bg-light .btn-primary {
+    background-color: #007bff; /* Bootstrap default blue */
+    border-color: #007bff;
+}
+
+body.bg-light input.form-control {
+    background-color: #ffffff; /* White background */
+    color: #212529; /* Dark text */
+    border: 1px solid #ced4da; /* Default border color */
+}
+
+body.bg-light input::placeholder {
+    color: #6c757d; /* Default Bootstrap gray for placeholder in light mode */
+}
+
+/* Dark mode styles */
+body.bg-dark {
+    background-color: #212529; /* Dark background */
+    color: #f8f9fa; /* Light text */
+}
+
+body.bg-dark .btn-primary {
+    background-color: #d63384; /* Pinkish color */
+    border-color: #b03060; /* Darker purple border */
+}
+
+body.bg-dark input.form-control {
+    background-color: #555; /* Darker background */
+    color: #ffffff; /* Light text */
+    border: 1px solid #777;
+}
+
+body.bg-dark .container {
+    background-color: #333; /* Darker background for containers */
+    border: 1px solid #444; /* Darker border */
+}
+
+body.bg-dark input::placeholder {
+    color: #ffffff; /* White placeholder text */
+}
+
+/* Floating button */
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure it's above other content */
+    padding: 15px 20px;
+    border-radius: 50px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.floating-btn i {
+    font-size: 20px;
+}
+
+/* Weather Data styling */
+.weather-data {
+    margin-bottom: 15px; /* Add space between weather data points */
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.weather-data span {
+    font-weight: bold;
+    font-size: 1.1rem; /* Slightly larger font size */
+}
+
+/* Button Styles */
+.btn-primary {
+    padding: 10px 20px; /* Increase button size */
+    font-size: 1.1rem;   /* Slightly larger text for the button */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth button transition */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
